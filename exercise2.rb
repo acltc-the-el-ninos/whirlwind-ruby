@@ -1,5 +1,3 @@
-count = 0
-11.times do
+11.times do |count|
   puts count
-  count += 1
 end
