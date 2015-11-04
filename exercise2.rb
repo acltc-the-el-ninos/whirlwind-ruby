@@ -21,3 +21,16 @@ end
 
 # Translate the following into ruby code. Run the program to make sure it works:
 # If Sam can cook more than 10 recipes and Sally speaks more than 5 languages, they should date. If Sam can make crepes or Sally can speak French, they should marry. 
+what_sam_can_cook = ['soup', 'cereal', 'crepes']
+what_sally_can_speak = ['english', 'but poorly']
+
+# what_sam_can_cook.each do |recipe|
+#   if recipe == 'crepes'
+#     puts 'Sam can make crepes'
+#   end
+# end
+if what_sam_can_cook.include? 'crepes'
+  puts 'Sam can make crepes'
+end
+
+
