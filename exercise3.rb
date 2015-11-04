@@ -7,12 +7,14 @@ people = []
   last_name = gets.chomp
   print "Email: "
   email = gets.chomp
-  person = {}
-  person[:first_name] = first_name
-  person[:last_name] = last_name
-  person[:email] = email
-  person[:acct_num] = rand(1000000000..9999999999)
-  people << person
+  people << {
+    first_name: first_name,
+    last_name: last_name,
+    email: email,
+    acct_num: rand(1000000000..9999999999)
+  }
 end
 
-p people
+people.each do |person|
+  puts "#{person[:first_name]} #{person[:last_name]}"
+end
